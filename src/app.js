@@ -6,11 +6,11 @@ const app = express()
 
 app.use(cors({
     origin: process.env.CORS_ORIGIN ,
-    CredentialS :true
+    Credentials :true
 }))
 
 app.use(express.json({limit:"16kb"}))
-app.use(express.urlencoded9({extended:true, limit: "16kb"}))
+app.use(express.urlencoded({extended:true, limit: "16kb"}))
 app.use(express.static("public"))
 app.use(cookieParser())
 
