@@ -35,7 +35,7 @@ const videoSchema = new Schema(
             default :0
         },
         owner : {
-            type :Schema.Types>isObjectIdOrHexString,
+            type :Schema.Types.ObjectId,
             ref:"User"
         }
 } ,{
